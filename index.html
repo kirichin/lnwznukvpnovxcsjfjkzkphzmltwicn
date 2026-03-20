@@ -2,30 +2,22 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Подключение VPN</title>
+    <title>VPN Import</title>
     <style>
-        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; background: #121212; color: white; text-align: center; }
-        .card { background: #1e1e1e; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid #333; }
-        .btn { background: #3b82f6; color: white; padding: 15px 30px; text-decoration: none; border-radius: 12px; font-weight: bold; font-size: 18px; display: inline-block; transition: transform 0.2s; }
-        .btn:active { transform: scale(0.95); }
-        p { color: #aaa; margin-bottom: 25px; }
+        body { font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; background: #121212; color: white; }
+        .btn { background: #3b82f6; color: white; padding: 20px 40px; text-decoration: none; border-radius: 15px; font-weight: bold; font-size: 20px; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Настройка VPN</h1>
-        <p>Нажмите кнопку ниже, чтобы<br>автоматически импортировать сервер</p>
-        
-        <a id="link" class="btn" href="hiddify://import/vless://32107482-3512-4ef3-a0a5-58e2ed974469@sub.zalupa3d.mooo.com:443?type=tcp&encryption=none&security=reality&pbk=VhcJJMJULDewDg_WFbLKVCp2KodfLy4mB-6qgMRA7jk&fp=chrome&sni=www.amd.com&sid=3975286b6c1b3b&spx=%2F#%F0%9F%87%AB%F0%9F%87%AEFinlyandiya">
-            ДОБАВИТЬ СЕРВЕР
-        </a>
-    </div>
+    <a id="go" class="btn" href="hiddify://import/vless%3A%2F%2F32107482-3512-4ef3-a0a5-58e2ed974469%40sub.zalupa3d.mooo.com%3A443%3Ftype%3Dtcp%26encryption%3Dnone%26security%3Dreality%26pbk%3DVhcJJMJULDewDg_WFbLKVCp2KodfLy4mB-6qgMRA7jk%26fp%3Dchrome%26sni%3Dwww.amd.com%26sid%3D3975286b6c1b3b%26spx%3D%252F%23Finlyandiya">
+        НАЖМИ ДЛЯ ИМПОРТА
+    </a>
 
     <script>
-        // Попытка автоматического открытия при входе
+        // Авто-клик через секунду после загрузки
         window.onload = function() {
             setTimeout(function() {
-                window.location.href = document.getElementById('link').href;
+                window.location.href = document.getElementById('go').href;
             }, 1000);
         };
     </script>
